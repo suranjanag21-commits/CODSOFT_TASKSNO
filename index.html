@@ -1,169 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suranjan Ghosh | Portfolio</title>
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f7fc;
-  color: #252d40;
-  line-height: 1.6;
-}
-header {
-  background: #18233e;
-  color: white;
-  padding: 18px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-header h2 { color: #73a5ff; }
-nav { display: flex; gap: 16px; flex-wrap: wrap; }
-nav a { color: white; text-decoration: none; }
-nav a:hover { color: #73a5ff; }
-section { padding: 65px 10%; }
-.hero {
-  background: linear-gradient(120deg, #18233e, #344f83);
-  color: white;
-  min-height: 360px;
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  flex-wrap: wrap;
-}
-.hero h1 { font-size: 40px; margin-bottom: 10px; }
-.hero h1 span { color: #8bb5ff; }
-.hero p { margin-bottom: 20px; }
-.btn {
-  display: inline-block;
-  background: #4d83f5;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 10px;
-}
-.photo {
-  width: 155px;
-  height: 155px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #8bb5ff;
-}
-h2.title { text-align: center; margin-bottom: 25px; }
-.about, .contact { text-align: center; }
-.skills, .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-.skill, .project {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 12px #15213b12;
-}
-.skill { min-width: 110px; text-align: center; }
-.project { flex: 1 1 220px; }
-.project h3 { margin-bottom: 8px; }
-#resume { text-align: center; background: #e9effb; }
-footer {
-  background: #18233e;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-@media(max-width:600px) {
-  header { justify-content: center; }
-  .hero h1 { font-size: 32px; }
-  section { padding: 45px 7%; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextora | Modern Solutions</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h2>Suranjan.</h2>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Nextora.</h2>
 
-<section class="hero" id="home">
-  <div>
-    <p>Hello, welcome to my portfolio!</p>
-    <h1>I'm <span>Suranjan Ghosh</span></h1>
-    <h3>BCA Student | Aspiring Web Developer</h3>
-    <p>I enjoy learning web development and creating websites.</p>
-    <a class="btn" href="#contact">Contact Me</a>
-  </div>
-  <img class="photo" src="profile.jpeg" alt="My profile photo">
-</section>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
 
-<section class="about" id="about">
-  <h2 class="title">About Me</h2>
-  <p>I am a third-year BCA student interested in technology,
-  programming and web development. I am developing my skills
-  by building projects and learning new tools.</p>
-</section>
+            <a href="#contact" class="nav-button">Contact Us</a>
+        </nav>
+    </header>
 
-<section id="skills">
-  <h2 class="title">My Skills</h2>
-  <div class="skills">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">Java</div>
-    <div class="skill">PHP</div>
-    <div class="skill">SQL</div>
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">WELCOME TO NEXTORA</p>
 
-<section id="projects">
-  <h2 class="title">My Projects</h2>
-  <div class="projects">
-    <div class="project">
-      <h3>Personal Portfolio</h3>
-      <p>A website introducing me, my skills and my work.</p>
-    </div>
-    <div class="project">
-      <h3>Student Database</h3>
-      <p>A practice project for learning database operations.</p>
-    </div>
-    <div class="project">
-      <h3>Java Programs</h3>
-      <p>Beginner programs created while learning Java.</p>
-    </div>
-  </div>
-</section>
+            <h1>Empower Your Business with Modern Solutions</h1>
 
-<section id="resume">
-  <h2 class="title">My Resume</h2>
-  <p>You can add your resume PDF here when it is ready.</p>
-  <a class="btn" href="resume.pdf" download>Download Resume</a>
-</section>
+            <p class="description">
+                Discover creative digital solutions that help your
+                business grow and achieve more.
+            </p>
 
-<section class="contact" id="contact">
-  <h2 class="title">Contact Me</h2>
-  <p>Email: Suranjanag21@gmail.com</p>
-  <p>GitHub: https://github.com/suranjanag21-commits</p>
-  <p>LinkedIn: https://www.linkedin.com/in/suranjana-ghosh-687a74330?utm_source=share_via&utm_content=profile&utm_medium=member_android</p>
-</section>
+            <div class="hero-buttons">
+                
+                <a href="#services" class="primary-button">
+                    Get Started
+                </a>
 
-<footer>
-  <p>© 2026 Suranjan Ghosh | Personal Portfolio</p>
-</footer>
+                <a href="#about" class="secondary-button">
+                    Explore More
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                alt="Modern workspace"
+            >
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <p class="section-label">ABOUT US</p>
+        <h2>Ideas That Create Impact</h2>
+
+        <p>
+            We believe in creativity, innovation and simple digital
+            experiences. Our goal is to make technology useful,
+            accessible and effective.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <p class="section-label">WHAT WE OFFER</p>
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+            <div class="service-card">
+                <h3>Web Design</h3>
+                <p>Beautiful and user-friendly website designs.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Development</h3>
+                <p>Responsive websites built with modern technology.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Digital Solutions</h3>
+                <p>Creative ideas to improve your online presence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Ready to Explore Something New?</h2>
+        <p>Let's turn your ideas into a digital experience.</p>
+        <a href="#contact" class="primary-button">Let's Connect</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>9836659119</h2>
+        <p>Email: Suranjanag21@gmail.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Nextora. Created as a landing page project.</p>
+    </footer>
 
 </body>
 </html>
