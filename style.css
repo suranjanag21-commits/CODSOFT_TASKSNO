@@ -1,0 +1,266 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #202b3c;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 22px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    color: #246b55;
+    font-size: 28px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #263342;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #e87945;
+}
+
+.nav-button {
+    background: #246b55;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 65px 45px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #e9f1ed;
+    border-radius: 16px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.tagline,
+.section-label {
+    color: #e87945;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #173e35;
+}
+
+.description {
+    color: #5e6b69;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-button {
+    background: #246b55;
+    color: white;
+}
+
+.primary-button:hover {
+    background: #174d3d;
+}
+
+.secondary-button {
+    border: 1px solid #246b55;
+    color: #246b55;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    max-width: 800px;
+    margin: 75px auto;
+    padding: 20px;
+}
+
+.about h2,
+.services h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.about p:last-child {
+    color: #687581;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 65px 30px;
+    background: #ffffff;
+}
+
+.service-container {
+    max-width: 1100px;
+    margin: 35px auto 0;
+    display: flex;
+    gap: 25px;
+}
+
+.service-card {
+    flex: 1;
+    padding: 30px 22px;
+    border-radius: 12px;
+    background: #f7f8fc;
+    border: 1px solid #e5e9ed;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+.service-card h3 {
+    color: #246b55;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #687581;
+}
+
+/* Projects Section */
+.projects {
+    text-align: center;
+    padding: 70px 20px;
+    background: #173e35;
+    color: white;
+}
+
+.projects h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.projects p {
+    margin-bottom: 25px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.contact p {
+    color: #687581;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #152b27;
+    color: white;
+    font-size: 14px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 35px 22px;
+        margin: 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-image img {
+        height: 250px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+}
+
